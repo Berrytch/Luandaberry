@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleep | Tecnologia</title>
+  <link rel="stylesheet" href="">
+  <script src="" defer></script>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar{background: transparent;width: 5px;padding:10px;position: fixed;}
+*::-webkit-scrollbar-thumb{width:0px;}
+body {
+  font-family: Arial, sans-serif;
+  color: #000; /* Texto em cor clara para contraste */
+  background: linear-gradient(45deg,#001 30%, #eee 30%, #eee 30%); /* Degrad� escuro para o fundo */
+}
+body:before{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg,#001 30%, #eee 30%, #eee 30%);
+}
+
+/* Cabe�alho */
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background:#fff; /* Fundo escuro e semi-transparente */
+  color: #e0e0e0; /* Cor do texto do cabe�alho */
+  box-shadow: 0 4px 8px rgba(100, 100, 100, 0.5); /* Sombra no cabe�alho */
+  z-index: 10;
+  top: 0;
+  background: linear-gradient(45deg, #fff 50%, #001 50%);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  color: #eee; /* Verde escuro */
+  text-decoration: none;
+   transition: 0.5s ease;
+   padding: 10px 20px;
+}
+
+nav a:hover {
+   color: #fff;
+  
+  transform: scale(1.5);
+  background: #029;
+  border-radius: 5px;
+
+}
+
+
+/* Se��es */
+section {
+  padding: 5rem 1rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  max-width: 1200px;
+}
+
+/* T�tulos das Se��es */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #001;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 5, 0.5);
+  animation: fadeIn 1s;
+    background: linear-gradient(45deg,#eee 70%,#001 30%);text-align: left;padding: 10px 10px 10px 30px;font-style: oblique;border: 2px solid #fff;
+}
+
+/* Efeito de Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slides de Tecnologia */
+.tecnologias {
+  background-image: url("1.jpg");
+height: calc()
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-top:70px;
+  display: flex;justify-content:center;align-items: center;
+  flex-wrap: wrap;
+}
+
+.tecnologias h3 {
+  color: #fff;
+  font-size: 30px;
+  border: 2px solid #fff;border-radius: 20px;padding: 50px
+}
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Servi�os */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 0 1rem;
+background: #fff;
+border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 10, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(45deg,#eee 70%,#001 30%);border: 2px solid #001;
+
+}
+
+
+.card {
+  width: 290px;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem;
+  transition: transform 0.3s, background-color 0.3s;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 10, 0.5);
+  line-height: 1.5em;
+  margin: 10px
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #eee;
+}
+
+.card p{text-align: justify;padding: 10px;}
+.card img {
+  width: 100%;
+  height: 200px;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 10, 0.5);
+  margin-top: 20px;
+}
+
+/* Se��o Sobre N�s */
+.sobre {
+  text-align: justify;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background:#fff;
+ box-shadow: 0 2px 5px rgba(0, 0, 10, 0.5); 
+}
+
+.sobre article {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: wrap; /* Quebra de linha para telas menores */
+}
+
+.sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 10px;
+  transition: color 0.3s, transform 0.3s;
+
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  min-width: 300px;
+  flex: 1 1 300px; /* Quebra autom�tica em telas pequenas */
+  box-shadow: 0 2px 5px rgba(0, 0, 10, 0.5);
+}
+
+.sobre p:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Contato */
+.contato {
+  margin-top: 2rem;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 255, 0.5);
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contato-abas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.contato-abas button {
+  padding: 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #555;
+  color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contato-abas button:hover {
+  background-color: #00b300;
+  color: white;
+}
+
+#contato-form {
+  display: none;
+}
+
+.contato-conteudo.active {
+  display: block;
+}
+
+#contato-info {
+  line-height: 3em;
+}
+
+@media(max-width: 880px){
+  .card{width: 40%}
+}
+@media(max-width: 700px){
+  .card{width: 300px}
+}
+
+
+  </style> 
+  </head>
+<body>
+
+  <!-- Cabe�alho Fixo -->
+  <header>
+    <div class="logo">Cleep</div>
+    <nav>
+      <a href="#servicos">Servi&ccedil;os</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- Slides de Tecnologias -->
+  <aside class="tecnologias" id="tecnologias">
+    <p style="width: 100%; color: #fff; text-align: center; font-size: 30px; text-transform: uppercase; font-weight: bold;">
+      Seja bem-vindo &agrave;
+    </p>
+    <h3>Casa de Tecnologias</h3>
+  </aside>
+
+  <!-- Se��o Sobre -->
+  <section class="sobre" id="sobre">
+    <h2>Sobre N&oacute;s</h2>
+    <article>
+      <p>Na Cleep, estamos comprometidos com o desenvolvimento de solu&ccedil;&otilde;es de alta qualidade, que atendam &agrave;s necessidades de nossos clientes e superem suas expectativas. Nossa miss&atilde;o &eacute; criar tecnologia que transforme neg&oacute;cios, simplifique processos e inove continuamente.</p>
+      <p>Por que nos contratar? Oferecemos solu&ccedil;&otilde;es sob medida, adaptadas &agrave;s necessidades de cada cliente. Nossas principais habilidades incluem desenvolvimento &aacute;gil, suporte dedicado e um forte compromisso com a qualidade.</p>
+    </article>
+  </section>
+
+  <!-- Servi�os -->
+  <aside class="servicos" id="servicos" style="padding: 20px">
+    <h2 style="max-width: 1200px;margin: 20px auto">Servi&ccedil;os</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cria&ccedil;&atilde;o de Sites</h3>
+        <img src="sites.jpg" alt="Cria��o de Sites">
+        <p>Desenvolvemos sites modernos, responsivos e otimizados para SEO.</p>
+      </div>
+      <div class="card">
+        <h3>Aplicativos Mobile</h3>
+        <img src="mobile.jpg" alt="Aplicativos Mobile">
+        <p>Aplicativos para Android e iOS com alto desempenho e experi&ecirc;ncia do usu&aacute;rio.</p>
+      </div>
+      <div class="card">
+        <h3>Aplicativos Desktop</h3>
+        <img src="desk.jpg" alt="Aplicativos Desktop">
+        <p>Solu&ccedil;&otilde;es vers&aacute;teis para ambientes desktop e multiplataforma.</p>
+      </div>
+      <div class="card">
+        <h3>Pacote de Marketing</h3>
+        <img src="helder.jpg" alt="Pacote de Marketing">
+        <p>Oferecemos um m&ecirc;s de marketing gratuito para promover o lan&ccedil;amento da sua solu&ccedil;&atilde;o tecnol&oacute;gica.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <h2>Contacto</h2>
+    
+    <div id="contato-info" class="contato-conteudo">
+      <p><strong>Email:</strong> gis.angola@outlook.com</p>
+      <p><strong>Telefone:</strong> (+244) 942 734 691</p>
+      <p><strong>Telefone:</strong> (+244) 940 772 278</p>
+      <p><strong>Endere&ccedil;o:</strong> Luanda - Angola / Benfica</p>
+    </div>
+    <div id="contato-form" class="contato-conteudo">
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 3000); // Alterne slides a cada 3 segundos
+showSlide(currentSlide); // Exibe o primeiro slide ao carregar a página
+
+  </script>
+
+</body>
+</html>
